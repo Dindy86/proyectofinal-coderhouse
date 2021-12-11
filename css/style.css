@@ -856,14 +856,15 @@ main .main__container .section__item .containerItems .card-transition:hover {
 }
 /*------------------------Contacto.html------------------------------*/
 .formCrearCuenta {
-  width: 100%;
+  width: 95%;
   margin: auto;
   border: 2px solid #26427d;
   padding: 0.62rem 1.25rem;
   box-sizing: border-box;
-  margin-top: 1.25rem;
+  margin-top: 4rem;
   border-radius: 0.43rem;
   text-align: center;
+  margin-bottom: 3rem !important;
 }
 .formCrearCuenta .formCrearCuenta__title {
   color: #26427d;
@@ -885,7 +886,7 @@ main .main__container .section__item .containerItems .card-transition:hover {
 }
 .formCrearCuenta .form__CrearCuentaCheckbox {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.03rem;
   margin-bottom: 1rem !important;
 }
 .formCrearCuenta .form__CrearCuentaCheckbox .form__checkbox {
@@ -900,10 +901,11 @@ main .main__container .section__item .containerItems .card-transition:hover {
   margin: 0 auto;
   border: none;
   border-radius: 0.5rem;
+  transition: all 0.5s linear;
 }
 .formCrearCuenta .formCrearCuenta__button:hover {
   cursor: pointer;
-  background: #4368c5;
+  background: #415586;
 }
 .formCrearCuenta .formCrearCuenta__question {
   padding-bottom: 1.25rem;
@@ -912,6 +914,7 @@ main .main__container .section__item .containerItems .card-transition:hover {
 .formCrearCuenta .formCrearCuenta__question .formCrearCuenta__link {
   text-decoration: none;
   color: #26427d;
+  font-weight: 600;
 }
 
 @media (min-width: 480px) {

@@ -14,7 +14,6 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <!------------------------------Header------------------------------->
@@ -56,7 +55,7 @@
     <main>
       <div>
         <form class="formCrearCuenta">
-          <h1 class="formCrearCuenta__title">Crear cuenta</h1>
+          <h2 class="formCrearCuenta__title">CREAR CUENTA</h2>
           <input class="formCrearCuenta__input" type="text" name="nombre" class="input-box" placeholder="Nombre">
           <input class="formCrearCuenta__input" type="email" name="correo" class="input-box" placeholder="Correo">
           <input class="formCrearCuenta__input" type="tel" name="telefono" class="input-box" placeholder="Telefono">
@@ -68,5 +67,45 @@
         </form>  
       </div>
     </main> 
-  
-    <!----------------------------Footer------------------------->
+<!---------------------------------------------Footer------------------------------------------->
+<footer>
+  <div class="container__footer">
+    <div class="footerRow__primary">
+      <div class="newsletter">
+        <h3 class="formNewsletter__title">Recibe nuestras novedades</h3>
+        <form class="formNewsletter">
+          <input class="formNewsletter__input" type="email" name="correo" class="input-box" placeholder="Ingresa tu email">
+          <input type="button" value="Suscribirme" class="formNewsletter__button">
+        </form>  
+      </div>
+    </div>
+    <section class="footerRow__secondary">
+      <div class="footerRow__secondary__container">
+        <div class="footerCol  footerCol--primary" >  
+          <h4 class="footer__title">Servicio al cliente</h4>
+          <ul class="footerCol__list">
+            <li class="footerCol__item"><a class="footer__link" href="">Contacto</a></li>
+            <li class="footerCol__item"><a class="footer__link" href="">Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="footerCol  footerCol--secondary"> 
+          <h4 ><a class="footer__logo" href="">Logo</a></h4>
+            <ul class="footerCol__listRedesSociales" >
+              <h4 class="footer__title">Siguenos en:</h4>
+              <li class="footerCol__item"><a class="logo-row footer__link" href=""><i class="fab fa-facebook"></i> facebook</a></li>
+              <li class="footerCol__item"><a class="logo-row footer__link" href=""> <i class="fab fa-youtube"></i> Youtube</a></li>
+            </ul>
+        </div>  
+        <div class=" footerCol  footweCol--tertiary"> 
+          <h4 class="footer__title">Acerca de Nosotros</h4>
+          <ul class="footerCol__list">
+            <li class="footerCol__item"><a class="footer__link"  href="">Nuestra Visión</a></li>
+            <li class="footerCol__item"><a class="footer__link"  href="">Nuestra Misión </a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer__hr"> 
+      <p class="copyright">&copy; 2021 by Dindy Pierre</p>
+    </section>
+  </div>   
+</footer>
