@@ -1,7 +1,7 @@
 {
   "name": "dindypierre-bootstrap-tarea",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rose Tienda es mi proyecto final como estudiante de coderhouse (desarrollo web) ",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss:css"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Dindy86/bootstrap-tarea.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dindy Pierre",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Dindy86/bootstrap-tarea/issues"
