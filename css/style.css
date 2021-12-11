@@ -719,7 +719,7 @@ main .main__container .section__item .containerItems .card-transition:hover {
 }
 /*------------------------Contacto.html------------------------------*/
 .formContact {
-  width: 100%;
+  width: 95%;
   margin: auto;
   border: 0.12rem solid #26427d;
   padding: 0.62rem 1.25rem;
