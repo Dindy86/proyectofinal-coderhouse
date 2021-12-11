@@ -588,6 +588,11 @@ main .main__container .section__item .containerItems .card-transition:hover {
     position: relative;
     top: 2rem;
   }
+  footer .container__footer .footerRow__secondary .footerRow__secondary__container .footerCol--secondary .footer__logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
   footer .container__footer .footerRow__secondary hr {
     margin-top: 2rem !important;
   }
