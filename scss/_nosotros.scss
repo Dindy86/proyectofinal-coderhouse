@@ -33,12 +33,13 @@
     }
   }
   .information__container{
+    text-align: center;
     .information__titulo{
       font-family: $fontFamily-primary;
       font-size: 2.3rem;
       font-weight: 900;
       margin-top: 2rem;
-      text-align: center;
+      /*text-align: center;*/
     }
     .information-paragraph{
       line-height: 2rem;
