@@ -1,14 +1,12 @@
 /*-------------------------------index.html-----------------------------*/
+/*------------------------header-------------------------*/
 .mainHeader{
   @include box-size(100%,6.25rem);
   margin: 0 auto;
   background-color: $color-primary;
-  /***************modification******************/
-  
   position: sticky;
   top: 0;
   z-index: 999;
-  /*********************************************/
   .mainContainer{
     @include box-size(95%,6.25rem);
     margin: 0 auto;
@@ -76,21 +74,14 @@
           text-decoration: none;
           color: whitesmoke;
           .icon{
-            /******modificando*******/
             margin-top: 0.1rem;
             font-size: 1.5rem;
-            
-            /******antes******
-            margin-top: 0.3rem;
-            font-size: 1.3rem;
-            */
           }
         }
         .link__cart{
           margin-left: 1rem;
         }
-      } 
-      
+      }   
     }
     .checkbox{
       display: none;
@@ -103,7 +94,6 @@
       height: 100vh;
       @include box-size(100%,100vh);
       background-color: $color-primary;
-      /*position: absolute;*/
       position: fixed;
       left: 0;
       top: 6.188rem;
@@ -135,7 +125,7 @@
   }
 }
 
-/*--------------------------------Main---------------------------------*/
+/*-----------------------------Main------------------------------*/
 main{
   width: 100%;
   .main__container{
@@ -228,8 +218,6 @@ main .main__container .section__option{
     transform:translateX(0);
   }
 }
-
-
 main .main__container .section__item{
   .containerItems{
     width: 100%;
@@ -237,70 +225,29 @@ main .main__container .section__item{
     
     .card{
       width: 12.5rem !important;
-      /*****************modificando*************************/
-      /*border: 0.1rem solid $color-primary !important;*/
-      /*****************************************************/
-      /*border: 0.17rem solid $color-primary !important;*/
-
-
-      /********************modificando*******************/
       .image-transition{
-        /*transition: box-shadow 5s linear;*/
         animation: image-transition 0.3s ease;
-      
       }
-      /*
-      .image-transition:hover{
-        transform: scale(1.02);
-      }*/
       @keyframes image-transition {
           100%{
             transform: scale(2);
           }
-          
-
       }
-      
-      /**************************************************/
       .card-body{
-        /***********************modificando para es mejor esta parte*******************/
         text-align: center;
         position: relative;
-        .oferta{
-          position: absolute;
-          font-size: 20px;
-          font-weight: 600;
-          top: -230px;
-          color: white;
-          /*left: 0px;*/
-          width: 100px;
-          height:30px; 
-          background-color:#116bb9;
-          /*background-color:#9fb7cd;*/
-          /*background-color:#0b3961;*/
-          /*background-color:*/
-          /*background-color: $color-secondary;*/
-          /*transform: rotateX(20deg);*/
-          text-align: center;
-          border-radius: 5px
-        }
-
-        /*******************************Modificando**********************************/
         .item__paragraph{
-          width: 200px;
-          top: 20px;
+          width: 12.5rem;
+          top: 1.25rem;
         }
         
         .item_paragraph__lineThrough{
           text-decoration: line-through;
           color: rgb(170, 170, 170);
-          /*padding-left: 10px;*/
         }
         .item_paragraph__bold{
           font-weight: 600;
         } 
-        
-        /**************************************************************************/
         @include flex(column,center,center);
         .btn-item{
           background-color: $color-primary;
@@ -309,39 +256,23 @@ main .main__container .section__item{
         }
       }
     } 
-    /***********************modificando para es mejor esta parte*******************/
     .card-transition{
       transition: box-shadow 0.3s linear;
     
     }
     .card-transition:hover{
-      /*transform: scale(0.5);*/
       box-shadow: 0.10rem 0.20rem 0.20rem 0.10rem rgb(197, 195, 195);
     }
-    /****************************************************/
-    /*
-    .card-transition{
-      transition: box-shadow 1s linear;
-    
-    }
-    .card-transition:hover{
-      transform: scale(1.05);
-      box-shadow: 0.12rem 0.25rem 0.62rem 0.25rem #364f85;
-    }
-    */
   } 
 }
 
 .separator{
   @include flex(column,center ,center);
-  /*border: 2px solid black;*/
   margin-bottom:50px!important;
   text-align: center;
-  /*background-color: #f3f4f8;*/
   .separator__title{
     position: relative;
     color:$color-primary !important;
-    /*border-bottom: solid 2px #364f85;*/
     background-color:white;
     font-family: $fontFamily-primary;
     font-weight: 600;
@@ -357,62 +288,6 @@ main .main__container .section__item{
     height: 0.1rem;
   }
 }
-
-/*
-.item__title1{
-    /*
-    position: relative;
-    color: red !important;
-    /*border-bottom: solid 2px #364f85;*/
-  /*
-    background-color:white;
-    top: 18px;
-    z-index: 2;
-  }
-  /*
-  .separator1 {
-    width:95%;
-    margin: 0 auto;
-    height: 5px;
-    /*color: red;
-    margin-bottom: 10px!important;
-  }*/
-
-
-/*-----------Newsletter----------
-.newsletter{
-  width: 100%;
-  padding-top: 10px;
-
-  .newsLetter__container{
-    width: 95%;
-    margin: 0 auto;
-    background-color: rgba(38,66,125,50);
-    @include flex(row,center,center);
-    /*
-    .container__info{
-      display: none;
-    }
-    .formNewsletter__container{
-      /*
-      border-left: thick solid rgba(38,66,125,50);
-      color: rgba(38,66,125,50);
-      padding: 50px;
-
-      .formNewsletter__input{
-        
-      }
-      .formNewsletter__button{}
-      
-    }
-  }
-}*/
-
-
-
-
-
-
 
 /*----------------------------footer--------------------------*/
 .container__footer{
@@ -434,9 +309,7 @@ main .main__container .section__item{
         font-size: 1rem;
         font-weight: 700;
         margin-bottom: 0.625rem !important; 
-        /*margin-bottom: 10px !important;*/
-      }
-      
+      }    
       .formNewsletter{
         width: 100%;
         margin:0 auto;
@@ -450,23 +323,17 @@ main .main__container .section__item{
           outline: none;
           border: none;
           border-radius:0.313rem;
-          /*border-radius: 5px;*/
         }
         .formNewsletter__button{  
           position: absolute;
           top: 0.25rem;
-          /*top: 4px;*/
           right: 0.313rem;
-          /*right: 5px;*/
           background-color: $color-secondary;
           color: white;
           width: 6.25rem;
-          /*width: 100px;*/
           height:1.938rem;
-          /*height: 31px;*/
           border: none;
           border-radius:0.313rem;
-          /*border-radius: 5px;*/
         }
       }  
     }
@@ -480,7 +347,6 @@ main .main__container .section__item{
       .footerCol{
         @include flex(column,center,center); 
         .footer__title{
-          /*color: $color-footerText;*/
           color: gainsboro;
           font-weight: 600;
           font-size: 0.9rem;
@@ -515,7 +381,6 @@ main .main__container .section__item{
         top: 10rem;
       }
     }
-    /*---------------------------Modificando mejor------------------------------*/
     .footer__hr{
       width: 80%;
       margin: 0 auto;
@@ -523,15 +388,6 @@ main .main__container .section__item{
       margin-top: 4rem;
       border: solid 0.01rem rgb(156, 143, 143)!important;
     }
-    /*-------------------------------------------------------------------------*/
-    /*
-    hr{
-      width: 80%;
-      margin: 0 auto;
-      height: 0.01rem !important;
-      margin-top: 3.5rem;
-      border: solid 0.01rem rgb(156, 143, 143)!important;
-    }*/
     .copyright{
       text-align: center;
       font-size: 0.7rem;
@@ -552,7 +408,6 @@ main .main__container .section__item{
     margin-right: 25%;
   }
 }
-
 @media only screen and (min-width: 768px) {
   /*------header------*/
   .mainHeader{
@@ -565,26 +420,13 @@ main .main__container .section__item{
         @include flex(row,space-between,center);
         margin-top: 2.5rem;
         .col--primary{
-          /*************************modificando mejor*************/
           .icon-menu{
             display: none;
           }
           .header__title{
             font-size: 1.62rem;
             margin-left: 0;
-            /*border: 2px solid black;*/
-          }    
-
-          /********************antes******************************/
-          /*
-          .icon-menu{
-            display: none;
-          }
-          .header__title{
-            font-size: 1.62rem;
-            margin-left: 0;
-          }    
-          */    
+          }       
         }
         .col--secondary{
           position: relative;
@@ -606,16 +448,13 @@ main .main__container .section__item{
           
           }
         }
-          /************modificando agregando para ver como se queda *************************/
-          .col--tertiary{
-            /*border:2px solid black;*/
-            margin-top: 15px;
-            padding: 0;
-            .link__cart{
-              /*display: none;*/
-              margin-left: 30px;
-            }
+        .col--tertiary{
+          margin-top: 0.938rem;
+          padding: 0;
+          .link__cart{
+            margin-left: 1.875rem;
           }
+        }
       }
       .row--secondary{
         transform: translateX(0%);
@@ -634,34 +473,13 @@ main .main__container .section__item{
               border: none;
               height: 2.5rem;
               font-size: 1rem;
-              /*-----------------------------------------para poner en el breakpoint 768px---------------------------------*/
               a:hover{
                 color: rgba(255, 255, 255, 0.85)
               }   
-            /*--------------------------------------------------------------------------------------------------------*/
             }
-            /*-----------------------------------------para poner en el breakpoint 768px---------------------------------*/
             .nav__item:hover{
               border-bottom: solid 0.18rem rgb(25, 25, 117);
             }   
-            /*--------------------------------------------------------------------------------------------------------*/
-            /*
-            .nav__item:hover .nav__subList{
-              display: block;
-              position: absolute;
-              top: 2.5rem;
-              @include box-size(8.87rem,2.5rem);
-              list-style: none;
-              .nav__subItem{
-                margin-bottom: 1.87rem;
-                .nav__link:hover{
-                  color: white;
-                  text-decoration: none;
-                  display: block;
-                }
-              }
-            }
-            */
           }         
         }
       }
@@ -776,6 +594,5 @@ main .main__container .section__item{
         width: 16rem !important;
       }
     } 
-  }
-  
+  } 
 }
