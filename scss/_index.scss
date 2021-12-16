@@ -19,13 +19,14 @@
         padding-top: 0.5rem;
       }
       .col--primary{
-        .header__title{
-          font-size: 1.3rem;
+        a{
+          font-size: 1.5rem;
           margin-left: 0.5rem;
           color: white;
           font-family: $fontFamily-primary;
           font-weight: 600;
           margin-top: 0.37rem;
+          text-decoration: none;
         }
         .fa-bars{
           font-size: 1.4rem;
@@ -141,6 +142,31 @@ main{
         .carousel__column{
           width: 100%;
           .carousel{
+            position: relative;
+            .container__titleParagraph{
+              position: absolute;
+              background-color: rgba(255, 255, 255, 0.7);
+              border: solid 1px rgb(255, 255, 255);;
+              z-index: 1;
+              height: 5.625rem;
+              text-align: center;
+              .title{
+                margin-top: 0.313rem;
+                color: $color-primary;
+                font-weight: 500;
+                font-size: 1.12rem;
+                padding-bottom: 0.938rem;
+              }
+              a{
+                text-align: center;
+                background-color: #26427d;
+                color: white;
+                padding: 0.313rem;
+                text-decoration: none;
+                
+              }
+            
+            }
             .carousel-inner{
               .carousel-item{
                 position: relative;
@@ -379,6 +405,11 @@ main .main__container .section__item{
       .footerCol--secondary{
         position: absolute;
         top: 10rem;
+        .footer__logo{
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+        }
       }
     }
     .footer__hr{
@@ -494,6 +525,27 @@ main .main__container .section__item{
           @include box-size(100%,23.12rem);
           .carousel__column{
             .carousel{
+              .container__titleParagraph{
+                width: 20.62rem;
+                .title{
+                  margin-top: 0.313rem;
+                  color: $color-primary;
+                  padding-bottom: 0.938rem;
+                  font-family: $fontFamily-primary;
+                  font-weight:900;
+                  font-size: 1.8rem;
+                  font-family: $fontFamily-primary;
+                }
+                a{
+                  text-align: center;
+                  background-color: #26427d;
+                  color: white;
+                  padding: 0.313rem;
+                  text-decoration: none;
+                  
+                }
+              
+              }
               .carousel-inner{
                 .carousel-item{
                   height: 23.12rem;
@@ -546,8 +598,6 @@ main .main__container .section__item{
           position: relative;
           top: 2rem;
           .footer__logo{
-            text-decoration: none;
-            color: white;
             font-size: 1.2rem;
           }
         }

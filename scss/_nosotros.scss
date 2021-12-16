@@ -39,7 +39,9 @@
       font-size: 2.3rem;
       font-weight: 900;
       margin-top: 2rem;
-      /*text-align: center;*/
+    }
+    .information__titulo-1{
+      color: $color-primary;
     }
     .information-paragraph{
       line-height: 2rem;
@@ -79,4 +81,7 @@
       }
     }
   }
+}
+.cardTitle{
+  font-size: 20px;
 }

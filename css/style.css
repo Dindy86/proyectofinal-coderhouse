@@ -56,13 +56,14 @@ body {
   align-items: center;
   padding-top: 0.5rem;
 }
-.mainHeader .mainContainer .row--primary .col--primary .header__title {
-  font-size: 1.3rem;
+.mainHeader .mainContainer .row--primary .col--primary a {
+  font-size: 1.5rem;
   margin-left: 0.5rem;
   color: white;
   font-family: "Cormorant Garamond";
   font-weight: 600;
   margin-top: 0.37rem;
+  text-decoration: none;
 }
 .mainHeader .mainContainer .row--primary .col--primary .fa-bars {
   font-size: 1.4rem;
@@ -179,6 +180,31 @@ main .main__container .container__carousel__aside .subContainer__carousel__aside
 }
 main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column {
   width: 100%;
+}
+main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel {
+  position: relative;
+}
+main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .container__titleParagraph {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: solid 1px white;
+  z-index: 1;
+  height: 5.625rem;
+  text-align: center;
+}
+main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .container__titleParagraph .title {
+  margin-top: 0.313rem;
+  color: #26427d;
+  font-weight: 500;
+  font-size: 1.12rem;
+  padding-bottom: 0.938rem;
+}
+main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .container__titleParagraph a {
+  text-align: center;
+  background-color: #26427d;
+  color: white;
+  padding: 0.313rem;
+  text-decoration: none;
 }
 main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .carousel-inner .carousel-item {
   position: relative;
@@ -429,6 +455,11 @@ main .main__container .section__item .containerItems .card-transition:hover {
   position: absolute;
   top: 10rem;
 }
+.container__footer .footerRow__secondary .footerRow__secondary__container .footerCol--secondary .footer__logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
 .container__footer .footerRow__secondary .footer__hr {
   width: 80%;
   margin: 0 auto;
@@ -549,6 +580,25 @@ main .main__container .section__item .containerItems .card-transition:hover {
     width: 100%;
     height: 23.12rem;
   }
+  main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .container__titleParagraph {
+    width: 20.62rem;
+  }
+  main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .container__titleParagraph .title {
+    margin-top: 0.313rem;
+    color: #26427d;
+    padding-bottom: 0.938rem;
+    font-family: "Cormorant Garamond";
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: "Cormorant Garamond";
+  }
+  main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .container__titleParagraph a {
+    text-align: center;
+    background-color: #26427d;
+    color: white;
+    padding: 0.313rem;
+    text-decoration: none;
+  }
   main .main__container .container__carousel__aside .subContainer__carousel__aside .carousel__column .carousel .carousel-inner .carousel-item {
     height: 23.12rem;
   }
@@ -589,8 +639,6 @@ main .main__container .section__item .containerItems .card-transition:hover {
     top: 2rem;
   }
   footer .container__footer .footerRow__secondary .footerRow__secondary__container .footerCol--secondary .footer__logo {
-    text-decoration: none;
-    color: white;
     font-size: 1.2rem;
   }
   footer .container__footer .footerRow__secondary hr {
@@ -655,7 +703,7 @@ main .main__container .section__item .containerItems .card-transition:hover {
   margin-top: 5rem;
   padding-bottom: 3rem;
 }
-.containerContact .sign-up-form h2 {
+.containerContact .sign-up-form .contact__title {
   color: #26427d;
   font-weight: 900;
   font-size: 1.8rem;
@@ -821,7 +869,9 @@ main .main__container .section__item .containerItems .card-transition:hover {
   font-size: 2.3rem;
   font-weight: 900;
   margin-top: 2rem;
-  /*text-align: center;*/
+}
+.information .information__container .information__titulo-1 {
+  color: #26427d;
 }
 .information .information__container .information-paragraph {
   line-height: 2rem;
@@ -859,6 +909,10 @@ main .main__container .section__item .containerItems .card-transition:hover {
     right: 3.125rem;
   }
 }
+.cardTitle {
+  font-size: 20px;
+}
+
 /*------------------------Contacto.html------------------------------*/
 .formCrearCuenta {
   width: 95%;
@@ -929,6 +983,10 @@ main .main__container .section__item .containerItems .card-transition:hover {
 }
 .item__title-1 {
   padding-top: 0.625rem;
+}
+
+.separator-2 {
+  margin-bottom: 0.625rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */
