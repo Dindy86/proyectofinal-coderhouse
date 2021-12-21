@@ -25,7 +25,6 @@
           color: white;
           font-family: $fontFamily-primary;
           font-weight: 600;
-          margin-top: 0.37rem;
           text-decoration: none;
         }
         .fa-bars{
@@ -226,13 +225,13 @@ main .main__container .section__option{
 }
 
 .item__title{
-  margin-left: 4.25rem;
+  margin-left: 0.5rem;
   font-family: $fontFamily-primary;
   font-size: 1.87rem;
   font-weight: 700;
-  margin-top: 0.62rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem !important;
   animation: item__title 5s ease;
-
 }
 @keyframes item__title {
   0%{
@@ -245,12 +244,13 @@ main .main__container .section__option{
   }
 }
 main .main__container .section__item{
+  width: 95%;
+  margin: 0 auto;
   .containerItems{
     width: 100%;
     margin: 0 auto;
-    
     .card{
-      width: 12.5rem !important;
+      width: 100% !important;
       .image-transition{
         animation: image-transition 0.3s ease;
       }
@@ -309,7 +309,7 @@ main .main__container .section__item{
     margin-top: 50px;
   }
   .separator__hr {
-    width:95%;
+    width:100%;
     margin: 0 auto;
     height: 0.1rem;
   }
@@ -438,6 +438,20 @@ main .main__container .section__item{
     margin-left:25%;
     margin-right: 25%;
   }
+  main .main__container .section__item{
+    width: 95%;
+    margin: 0 auto;
+    .containerItems{
+      width: 100%;
+      margin: 0 auto;
+      .card{
+        width: 15rem !important;
+        .image-transition{
+          animation: image-transition 0.3s ease;
+        }
+      } 
+    } 
+  }
 }
 @media only screen and (min-width: 768px) {
   /*------header------*/
@@ -453,6 +467,9 @@ main .main__container .section__item{
         .col--primary{
           .icon-menu{
             display: none;
+          }
+          a{
+            margin-left: 0;
           }
           .header__title{
             font-size: 1.62rem;
@@ -575,7 +592,7 @@ main .main__container .section__item{
   main .main__container .section__item{
     .containerItems{
       .card{
-        width: 17rem !important;
+        width: 20rem !important;
       }
     } 
   } 
@@ -607,6 +624,18 @@ main .main__container .section__item{
       }
     }  
   }
+}
+@media only screen and (min-width: 992px){
+  /*------Card Items-------*/
+  main .main__container .section__item{
+    width: 95%;
+    margin: 0 auto;
+    .containerItems{
+      .card{
+        width: 13rem !important;
+      }
+    } 
+  } 
 }
 
 @media only screen and (min-width: 1200px) {
@@ -647,6 +676,19 @@ main .main__container .section__item{
     .containerItems{
       .card{
         width: 16rem !important;
+      }
+    } 
+  } 
+}
+
+@media only screen and (min-width: 1300px){
+  /*------Card Items-------*/
+  main .main__container .section__item{
+    width: 95%;
+    margin: 0 auto;
+    .containerItems{
+      .card{
+        width: 18rem !important;
       }
     } 
   } 
