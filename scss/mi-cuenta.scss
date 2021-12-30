@@ -10,10 +10,10 @@
     margin-top: 5rem;
     padding-bottom: 3rem;
     .contact__title{
-      color:$color-primary;
+      color:#26427d;
       font-weight:900;
       font-size: 1.8rem;
-      font-family: $fontFamily-primary;
+      font-family: 'Cormorant Garamond';
       margin-top: 1rem;
     }
     .form__contact{
@@ -51,13 +51,13 @@
         border:none;
         outline: none;
         cursor: pointer;
-        background-color: $color-primary;
+        background-color: #26427d;
         margin-top: 2rem; 
         transition:all 0.5s linear;
       }
       .signup-btn:hover{
         cursor: pointer;
-        background-color: $background-hover-btn;
+        background-color: #415586;
       }
       .form__question{
         padding-bottom: 1.25rem;
@@ -65,7 +65,7 @@
         font-size: 1.1rem;
         .formContact__link{
           text-decoration: none;
-          color:$color-primary;
+          color:#26427d;
           font-size: 1rem;
           font-weight: 500;
         }   
