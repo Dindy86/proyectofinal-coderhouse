@@ -20,12 +20,9 @@
       }
       .col--primary{
         a{
-          font-size: 1.5rem;
-          margin-left: 0.5rem;
-          color: white;
-          font-family: $fontFamily-primary;
-          font-weight: 600;
-          text-decoration: none;
+          img{
+            padding-left: 0.3rem;
+          }
         }
         .fa-bars{
           font-size: 1.4rem;
@@ -61,7 +58,7 @@
             background-color: $color-secondary;
             text-align: center;
             .fa-search{
-              padding-top: 0.6rem;
+              padding-top: 0.54rem;
               color: whitesmoke;
               font-size: 1.4rem;
               cursor: pointer;
@@ -117,6 +114,10 @@
             a{
               color: white;
               text-decoration: none;
+              .bi{
+                color: $color-secondary;
+                padding-right: 0.1rem;
+              }
             }  
           } 
         }
@@ -184,7 +185,6 @@ main{
     }
   }
 }
-
 main .main__container .section__option{
   width: 90%;
   margin: 0 auto;
@@ -223,7 +223,6 @@ main .main__container .section__option{
     }        
   }
 }
-
 .item__title{
   margin-left: 0.5rem;
   font-family: $fontFamily-primary;
@@ -255,9 +254,9 @@ main .main__container .section__item{
         animation: image-transition 0.3s ease;
       }
       @keyframes image-transition {
-          100%{
-            transform: scale(2);
-          }
+        100%{
+          transform: scale(2);
+        }
       }
       .card-body{
         text-align: center;
@@ -284,14 +283,12 @@ main .main__container .section__item{
     } 
     .card-transition{
       transition: box-shadow 0.3s linear;
-    
     }
     .card-transition:hover{
       box-shadow: 0.10rem 0.20rem 0.20rem 0.10rem rgb(197, 195, 195);
     }
   } 
 }
-
 .separator{
   @include flex(column,center ,center);
   margin-bottom:50px!important;
@@ -320,7 +317,6 @@ main .main__container .section__item{
   width: 100%;
   background-color: rgb(2, 17, 68);
   margin-top: 1rem;
-
   .footerRow__primary{
     @include box-size(95%,6rem);
     margin: 0 auto;
@@ -405,11 +401,6 @@ main .main__container .section__item{
       .footerCol--secondary{
         position: absolute;
         top: 10rem;
-        .footer__logo{
-          text-decoration: none;
-          color: white;
-          font-size: 1rem;
-        }
       }
     }
     .footer__hr{
@@ -428,9 +419,7 @@ main .main__container .section__item{
     }
   }
 }
-
 /*---------------------------Media queries index.html---------------------------------*/
-
 @media only screen and (min-width: 576px) {
   .mainHeader .mainContainer .row--primary .col--secondary{
     top: 2.5rem;
@@ -470,6 +459,9 @@ main .main__container .section__item{
           }
           a{
             margin-left: 0;
+            img{
+              padding-left: 0;
+            }
           }
           .header__title{
             font-size: 1.62rem;
@@ -614,9 +606,6 @@ main .main__container .section__item{
         .footerCol--secondary{
           position: relative;
           top: 2rem;
-          .footer__logo{
-            font-size: 1.2rem;
-          }
         }
       }
       hr{
@@ -637,9 +626,7 @@ main .main__container .section__item{
     } 
   } 
 }
-
 @media only screen and (min-width: 1200px) {
-
   /*-----------Header-----------*/
   .col--tertiary{
         a{
@@ -654,7 +641,6 @@ main .main__container .section__item{
           margin-left: 1rem;
         }
       } 
-
   /*------carousel y aside-------*/
   main .main__container .container__carousel__aside .subContainer__carousel__aside{
     @include flex(row,center,center);
@@ -680,7 +666,6 @@ main .main__container .section__item{
     } 
   } 
 }
-
 @media only screen and (min-width: 1300px){
   /*------Card Items-------*/
   main .main__container .section__item{
