@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose tienda de ropa</title>
+    <meta name="keywords" content="ROSE, TIENDA, ROSE TIENDA, ROPA, MODA, JEANS, CAMISA, BLUSA, TRAJE, VESTIDO, MODA, COMPRAR">
+    <meta name="description" content="Este es el sitio web de Rose tienda de ropa en el que encontrarás jeans, traje, blusa, camisa, vestido, ofertas increíbles, Envíos, devoluciónes gratuitos y mucho mas.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/ae7f132082.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--------------------------------------Header----------------------------------->
+    <header class="mainHeader"> 
+      <div class="mainContainer">
+        <div class="mainRow row--primary">
+          <div class="colum col--primary">
+            <label class="icon-menu" for="menu-bar"><i class="fas fa-bars"></i></label>  
+            <a class="animate__animated animate__zoomIn" href="#"> <img src="./images/logoecommerce.png" alt="Logo"></a>
+          </div>
+          <div class="colum col--secondary">
+            <form class="form__search" action="" >
+              <input class="form__input" type="search" placeholder="Busca en Mi Tienda">
+              <a href=""><i class="fas fa-search"></i></a>
+            </form>  
+          </div> 
+          <div class="colum col--tertiary">
+            <a class="link__user" href="./pages/mi-cuenta.html"><i class="icon far fa-user"></i> </a>   
+            <a class="link__cart" href=""><i class="icon fas fa-shopping-cart"></i> </a>   
+          </div>
+        </div>
+        <input class=" checkbox" type="checkbox" id="menu-bar">
+        <div class="mainRow row--secondary">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="index.html"><i class="bi bi-house-fill home-image"></i>Inicio</a></li>
+              <li class="nav__item nav__item--mitienda"><a class="nav__link" href="./pages/nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="./pages/mi-cuenta.html">Mi cuenta</a></li>
+              <li class="nav__item"><a class="nav__link" href="./pages/categorias.html">Categorías</a></li>
+              <li class="nav__item"><a class="nav__link" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>  
+    </header>
+    <!-----------------------------------------main---------------------------------------->
+    <main>
+      <div class="main__containerError">      
+        <h1 class="titleError">Error 404</h1>
+        <p class="paragraphError">Lo Siento, página no encontrada.</p>
+        <p class="paragraphError">Navegue a través del menu.</p>
+      </div>
+    </main>
+    <!---------------------------------------------Footer------------------------------------------->
+    <footer>
+      <div class="container__footer">
+        <div class="footerRow__primary">
+          <p class="footer__paragraph"><a href="index.html#principal">Volver al inicio</a></p>
+          <div class="newsletter">
+            <h3 class="formNewsletter__title">Recibe nuestras novedades</h3>
+            <form class="formNewsletter">
+              <input class="formNewsletter__input" type="email" name="correo" class="input-box" placeholder="Ingresa tu email">
+              <input type="button" value="Suscribirme" class="formNewsletter__button">
+            </form>  
+          </div>
+        </div>
+        <section class="footerRow__secondary">
+          <div class="footerRow__secondary__container">
+            <div class="footerCol  footerCol--primary" >  
+              <h4 class="footer__title">Servicio al cliente</h4>
+              <ul class="footerCol__list">
+                <li class="footerCol__item"><a class="footer__link" href="./pages/contacto.html">Contacto</a></li>
+                <li class="footerCol__item"><a class="footer__link" href="./pages/contacto.html">Ayuda</a></li>
+              </ul>
+            </div>
+            <div class="footerCol  footerCol--secondary"> 
+              <a class="animate__animated animate__zoomIn" href="#"> <img src="./images/logoecommerce.png" alt="Logo"></a>
+              <ul class="footerCol__listRedesSociales" >
+                <h4 class="footer__title">Siguenos en:</h4>
+                <li class="footerCol__item"><a class="logo-row footer__link" href=""><i class="fab fa-facebook"></i> facebook</a></li>
+                <li class="footerCol__item"><a class="logo-row footer__link" href=""> <i class="fab fa-youtube"></i> Youtube</a></li>
+              </ul>
+            </div>  
+            <div class=" footerCol  footweCol--tertiary"> 
+              <h4 class="footer__title">Acerca de Nosotros</h4>
+              <ul class="footerCol__list">
+                <li class="footerCol__item"><a class="footer__link"  href="./pages/nosotros.html">Nuestra Visión</a></li>
+                <li class="footerCol__item"><a class="footer__link"  href="./pages/nosotros.html">Nuestra Misión </a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="footer__hr"> 
+          <p class="copyright">&copy; 2021 by Dindy Pierre</p>
+        </section>
+      </div>   
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

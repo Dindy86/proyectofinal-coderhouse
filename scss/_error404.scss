@@ -1,0 +1,18 @@
+main{
+  .main__containerError{
+    text-align: center;
+    @include box-size(95%,25rem);
+    margin: 0 auto;
+    @include flex(column,center,center);
+    .titleError{
+      color: $color-primary;
+      font-family: $fontFamily-primary;
+      font-weight: 800;
+      margin-bottom: 1rem!important;
+    }
+    .paragraphError{
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+    }
+  }
+}

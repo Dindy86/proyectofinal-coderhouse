@@ -1037,5 +1037,25 @@ main .main__container .section__item .containerItems .card-transition:hover {
     height: 3.125rem !important;
   }
 }
+main .main__containerError {
+  text-align: center;
+  width: 95%;
+  height: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .main__containerError .titleError {
+  color: #26427d;
+  font-family: "Cormorant Garamond";
+  font-weight: 800;
+  margin-bottom: 1rem !important;
+}
+main .main__containerError .paragraphError {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
