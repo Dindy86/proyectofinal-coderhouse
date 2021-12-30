@@ -153,7 +153,7 @@ body {
   color: white;
   text-decoration: none;
 }
-.mainHeader .mainContainer .row--secondary .nav .nav__list .nav__item a .bi {
+.mainHeader .mainContainer .row--secondary .nav .nav__list .nav__item a .home-image {
   color: #e8a188;
   padding-right: 0.1rem;
 }
